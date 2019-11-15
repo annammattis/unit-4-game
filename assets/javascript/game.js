@@ -98,6 +98,21 @@ function reset(){
         });   
     }); 
 
+    function gameSetUp() {
+        number = Math.floor(Math.random()*101+19);
+        console.log(number)
+        $('#number').text(number);
+        crystal1= Math.floor(Math.random()*11+1);
+        crystal2= Math.floor(Math.random()*11+1);
+        crystal3= Math.floor(Math.random()*11+1);
+        crystal4= Math.floor(Math.random()*11+1);
+        totalScore= 0;
+        $('#totalScore').text(totalScore);
+      
+        document.getElementById('number').innerHTML = randomNumber.join(' ');
+      }
+      
+      gameSetUp();
 
 }
 
@@ -105,16 +120,3 @@ function reset(){
 
 
 
-// function gameSetUp() {
-//   numOfGuesses = 15;
-//   randomWord = [Math.floor(Math.random() * words.length)];
-//   for (var i = 0; i < randomWord.length; i++) {
-//     displayWord.push('_');
-//   }
-//   console.log('randomWord', randomWord);
-//   console.log('displayWord', displayWord);
-
-//   document.getElementById('guessedWord').innerHTML = displayWord.join(' ');
-// }
-
-// gameSetUp();

@@ -1,27 +1,27 @@
 /* General Elements*/
-body{
-	background-image: url("../images/https://image.freepik.com/free-vector/abstract-background_53876-43362.jpg.png")
+body {
+	background-image: url("assets/images/abstract-background_53876-43362.jpg")
 }
-div{
+div {
 	background-color: white;
 	margin: 10px;
 	width: 25%
 }
-div{
+div {
 	border: solid 2px antiquewhite;
 	padding: 10px;
 }
-h1, h3, span{
+h1, h3, span {
 	font-weight: bold;
 	text-align: center;
 }
-h1{
+h1 {
 	font-size: 30pt;
 }
 
 
 /* Specfic Elements*/
-div.header, div.crystals{
+div.header, div.crystals {
 	background-color: #e0e0eb;
 }
 div.header {
@@ -29,36 +29,32 @@ div.header {
 }
 
 /* IDs */
-#number, .winsAndLosses{
+#number, #wins, #losses {
 	float: left;
 	width: 15%;
 	height: 60px;
 }
-#totalScore{
+#totalScore {
 	width: 15%;
 	height: 60px;
 }
-#crystals{
+#crystals {
 	clear: both;
 }
-#crystalsImage{
-	height: 60px;
-	margin: 10px;
-}
 
-#crystal-one{
+#crystal-one {
     height: 200px;
     width: 200px;
 }
-#crystal-two{
+#crystal-two {
     height: 200px;
     width: 200px;
 }
-#crystal-three{
+#crystal-three {
     height: 200px;
     width: 200px;
 }
-#crystal-four{
+#crystal-four {
     height: 200px;
     width: 200px;
 }
