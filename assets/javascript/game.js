@@ -12,12 +12,98 @@ var crystal4 = Math.round(Math.random() * 13) + 1;
 //create variables for wins, losses
 var wins = 0;
 var losses = 0;
+var totalScore = 0;
+
+$('#wins').text(wins);
+$('#losses').text(losses);
+
+//game reset
+
+function reset(){
+    number = Math.floor(Math.random()*101+19);
+    console.log(number)
+    $('#number').text(number);
+    crystal1= Math.floor(Math.random()*11+1);
+    crystal2= Math.floor(Math.random()*11+1);
+    crystal3= Math.floor(Math.random()*11+1);
+    crystal4= Math.floor(Math.random()*11+1);
+    totalScore= 0;
+    $('#totalScore').text(totalScore);
+    } 
+
+    //add wins to the totalScore
+    function win(){
+    alert("You won!");
+      wins++; 
+      $('#wins').text(wins);
+      reset();
+    }
+    //add loses to the totalScore
+    function lose(){
+    alert ("You lose!");
+      losses++;
+      $('#losses').text(losses);
+      reset()
+    }
+
+        //set up jewel clicks
+        $('#crystal-one').on ('click', function(){
+            userTotal = userTotal + num1;
+            console.log("New userTotal= " + userTotal);
+            $('#finalTotal').text(userTotal); 
+
+        //sets win/lose conditions
+                if (userTotal == Random){
+                yay();
+                }
+                else if ( userTotal > Random){
+                loser();
+                }   
+        })  
+        $('#crystal-two').on ('click', function(){
+            userTotal = userTotal + num2;
+            console.log("New userTotal= " + userTotal);
+            $('#finalTotal').text(userTotal); 
+                if (userTotal == Random){
+                yay();
+                }
+                else if ( userTotal > Random){
+                loser();
+                } 
+        })  
+        $('#crystal-three').on ('click', function(){
+            userTotal = userTotal + num3;
+            console.log("New userTotal= " + userTotal);
+            $('#finalTotal').text(userTotal);
+
+        //sets win/lose conditions
+            if (userTotal == Random){
+            yay();
+            }
+            else if ( userTotal > Random){
+            loser();
+            } 
+          })  
+        $('#crystal-four').on ('click', function(){
+            userTotal = userTotal + num4;
+            console.log("New userTotal= " + userTotal);
+            $('#finalTotal').text(userTotal); 
+            
+                if (userTotal == Random){
+                yay();
+                }
+                else if ( userTotal > Random){
+                loser();
+                }
+        });   
+    }); 
+
+
 }
 
 
 
-// var numOfGuesses;
-// var displayWord = [];
+
 
 // function gameSetUp() {
 //   numOfGuesses = 15;
